@@ -7,7 +7,8 @@ import Greeting from "./Greeting";
 const rootElem = document.querySelector("#root");
 
 const person = {
-  name: "Michael",
+  firstName: "Michael",
+  lastName: "Valiahmetov",
   birthDate: new Date("1963-04-16"),
 };
 
