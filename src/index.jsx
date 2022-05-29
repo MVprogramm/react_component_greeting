@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.scss";
-import Greeting from "./Greeting";
+import Greeting from "./Greeting.jsx";
 
 const rootElem = document.querySelector("#root");
 
@@ -12,8 +12,4 @@ const person = {
   birthDate: new Date("1963-04-16"),
 };
 
-const greetingElem = (props) => {
-  return <Greeting person={props.person} />;
-};
-
-ReactDOM.render(greetingElem(person), rootElem);
+ReactDOM.render(<Greeting person={person} />, rootElem);
