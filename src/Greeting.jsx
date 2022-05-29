@@ -1,5 +1,6 @@
 import React from "react";
 import "./greeting.scss";
+import moment from "moment";
 
 function Greeting(props) {
   return (
