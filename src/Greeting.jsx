@@ -5,8 +5,8 @@ import moment from "moment";
 function Greeting(props) {
   return (
     <div className="greeting">
-      My name is {props.firstName} {props.lastName}. I'm{" "}
-      {moment(props.birthDate).fromNow().slice(0, 3)} years old
+      My name is {props.person.firstName} {props.person.lastName}. I'm{" "}
+      {moment(props.person.birthDate).fromNow().slice(0, 3)} years old
     </div>
   );
 }
